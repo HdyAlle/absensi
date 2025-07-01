@@ -12,7 +12,6 @@
                 <!-- Logo -->
                 <a href="#" class="text-xl font-bold flex items-center lg:ml-2.5 transition-all duration-200 hover:scale-105">
                     <img src="{{ asset('img/logo.png') }}" class="h-8 mr-3 transition-transform duration-200 hover:rotate-12" alt="Logo">
-                    <span class="self-center whitespace-nowrap text-gray-800">Dashboard</span>
                 </a>
             </div>
             
@@ -74,7 +73,7 @@
         <ul class="space-y-2 font-medium">
             <!-- Home -->
             <li class="sidebar-item transform transition-all duration-200 hover:translate-x-1">
-                <a href="#" class="sidebar-link active group flex items-center w-full p-3 text-gray-900 rounded-lg transition-all duration-300 hover:bg-gradient-to-r hover:from-blue-50 hover:to-blue-100 hover:scale-105 hover:shadow-md relative overflow-hidden">
+                <a href="{{ route('admin.index')}}" class="sidebar-link active group flex items-center w-full p-3 text-gray-900 rounded-lg transition-all duration-300 hover:bg-gradient-to-r hover:from-blue-50 hover:to-blue-100 hover:scale-105 hover:shadow-md relative overflow-hidden">
                     <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-blue-600 opacity-0 group-hover:opacity-10 transition-opacity duration-300 rounded-lg"></div>
                     <div class="flex items-center justify-center w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg group-hover:scale-110 transition-all duration-300 relative z-10 group-hover:rotate-3">
                         <svg class="w-4 h-4 text-white transition-transform duration-300" fill="currentColor" viewBox="0 0 20 20">
@@ -92,14 +91,14 @@
             
                         <!-- Attendance -->
             <li class="sidebar-item transform transition-all duration-200 hover:translate-x-1">
-                <a href="#" class="sidebar-link group flex items-center w-full p-3 text-gray-900 rounded-lg transition-all duration-300 hover:bg-gradient-to-r hover:from-teal-50 hover:to-teal-100 hover:scale-105 hover:shadow-md relative overflow-hidden">
+                <a href="{{ route('admin.attendance.index') }}" class="sidebar-link group flex items-center w-full p-3 text-gray-900 rounded-lg transition-all duration-300 hover:bg-gradient-to-r hover:from-teal-50 hover:to-teal-100 hover:scale-105 hover:shadow-md relative overflow-hidden">
                     <div class="absolute inset-0 bg-gradient-to-r from-teal-500 to-teal-600 opacity-0 group-hover:opacity-10 transition-opacity duration-300 rounded-lg"></div>
                     <div class="flex items-center justify-center w-8 h-8 bg-gradient-to-r from-teal-500 to-teal-600 rounded-lg group-hover:scale-110 transition-all duration-300 relative z-10 group-hover:rotate-3">
                         <svg class="w-4 h-4 text-white transition-transform duration-300" fill="currentColor" viewBox="0 0 20 20">
                             <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path>
                         </svg>
                     </div>
-                    <span class="ml-3 group-hover:text-teal-700 transition-all duration-300 relative z-10 group-hover:font-semibold">Attendance</span>
+                    <span class="ml-3 group-hover:text-teal-700 transition-all duration-300 relative z-10 group-hover:font-semibold">Attendance Report</span>
                     <div class="ml-auto opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <svg class="w-4 h-4 text-teal-500" fill="currentColor" viewBox="0 0 20 20">
                             <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
@@ -110,7 +109,7 @@
 
             <!-- Company -->
             <li class="sidebar-item transform transition-all duration-200 hover:translate-x-1">
-                <a href="#" class="sidebar-link group flex items-center w-full p-3 text-gray-900 rounded-lg transition-all duration-300 hover:bg-gradient-to-r hover:from-green-50 hover:to-green-100 hover:scale-105 hover:shadow-md relative overflow-hidden">
+                <a href="{{ route('admin.company.index') }}" class="sidebar-link group flex items-center w-full p-3 text-gray-900 rounded-lg transition-all duration-300 hover:bg-gradient-to-r hover:from-green-50 hover:to-green-100 hover:scale-105 hover:shadow-md relative overflow-hidden">
                     <div class="absolute inset-0 bg-gradient-to-r from-green-500 to-green-600 opacity-0 group-hover:opacity-10 transition-opacity duration-300 rounded-lg"></div>
                     <div class="flex items-center justify-center w-8 h-8 bg-gradient-to-r from-green-500 to-green-600 rounded-lg group-hover:scale-110 transition-all duration-300 relative z-10 group-hover:rotate-3">
                         <svg class="w-4 h-4 text-white transition-transform duration-300" fill="currentColor" viewBox="0 0 20 20">
@@ -128,7 +127,7 @@
             
             <!-- Department -->
             <li class="sidebar-item transform transition-all duration-200 hover:translate-x-1">
-                <a href="#" class="sidebar-link group flex items-center w-full p-3 text-gray-900 rounded-lg transition-all duration-300 hover:bg-gradient-to-r hover:from-purple-50 hover:to-purple-100 hover:scale-105 hover:shadow-md relative overflow-hidden">
+                <a href="{{ route('admin.departments.index') }}" class="sidebar-link group flex items-center w-full p-3 text-gray-900 rounded-lg transition-all duration-300 hover:bg-gradient-to-r hover:from-purple-50 hover:to-purple-100 hover:scale-105 hover:shadow-md relative overflow-hidden">
                     <div class="absolute inset-0 bg-gradient-to-r from-purple-500 to-purple-600 opacity-0 group-hover:opacity-10 transition-opacity duration-300 rounded-lg"></div>
                     <div class="flex items-center justify-center w-8 h-8 bg-gradient-to-r from-purple-500 to-purple-600 rounded-lg group-hover:scale-110 transition-all duration-300 relative z-10 group-hover:rotate-3">
                         <svg class="w-4 h-4 text-white transition-transform duration-300" fill="currentColor" viewBox="0 0 20 20">
@@ -146,7 +145,7 @@
             
             <!-- Area -->
             <li class="sidebar-item transform transition-all duration-200 hover:translate-x-1">
-                <a href="#" class="sidebar-link group flex items-center w-full p-3 text-gray-900 rounded-lg transition-all duration-300 hover:bg-gradient-to-r hover:from-red-50 hover:to-red-100 hover:scale-105 hover:shadow-md relative overflow-hidden">
+                <a href="{{ route('admin.area.index') }}" class="sidebar-link group flex items-center w-full p-3 text-gray-900 rounded-lg transition-all duration-300 hover:bg-gradient-to-r hover:from-red-50 hover:to-red-100 hover:scale-105 hover:shadow-md relative overflow-hidden">
                     <div class="absolute inset-0 bg-gradient-to-r from-red-500 to-red-600 opacity-0 group-hover:opacity-10 transition-opacity duration-300 rounded-lg"></div>
                     <div class="flex items-center justify-center w-8 h-8 bg-gradient-to-r from-red-500 to-red-600 rounded-lg group-hover:scale-110 transition-all duration-300 relative z-10 group-hover:rotate-3">
                         <svg class="w-4 h-4 text-white transition-transform duration-300" fill="currentColor" viewBox="0 0 20 20">
@@ -164,7 +163,7 @@
             
             <!-- Employee -->
             <li class="sidebar-item transform transition-all duration-200 hover:translate-x-1">
-                <a href="#" class="sidebar-link group flex items-center w-full p-3 text-gray-900 rounded-lg transition-all duration-300 hover:bg-gradient-to-r hover:from-indigo-50 hover:to-indigo-100 hover:scale-105 hover:shadow-md relative overflow-hidden">
+                <a href="{{ route('admin.employee.index') }}" class="sidebar-link group flex items-center w-full p-3 text-gray-900 rounded-lg transition-all duration-300 hover:bg-gradient-to-r hover:from-indigo-50 hover:to-indigo-100 hover:scale-105 hover:shadow-md relative overflow-hidden">
                     <div class="absolute inset-0 bg-gradient-to-r from-indigo-500 to-indigo-600 opacity-0 group-hover:opacity-10 transition-opacity duration-300 rounded-lg"></div>
                     <div class="flex items-center justify-center w-8 h-8 bg-gradient-to-r from-indigo-500 to-indigo-600 rounded-lg group-hover:scale-110 transition-all duration-300 relative z-10 group-hover:rotate-3">
                         <svg class="w-4 h-4 text-white transition-transform duration-300" fill="currentColor" viewBox="0 0 20 20">
@@ -185,256 +184,326 @@
 
 <!-- JavaScript dengan animasi yang diperbaiki -->
 <script>
-(function() {
-    'use strict';
-    
-    let dropdownInitialized = false;
-    
-    function initDropdown() {
-        if (dropdownInitialized) return;
+    (function() {
+        'use strict';
         
-        const userBtn = document.querySelector('.navbar-user-btn');
-        const dropdown = document.querySelector('.navbar-dropdown');
-        const userIcon = document.getElementById('user-icon');
+        let dropdownInitialized = false;
         
-        if (!userBtn || !dropdown) {
-            console.log('Dropdown elements not found');
-            return;
+        // Function untuk set active sidebar link berdasarkan current URL
+        function setActiveSidebarLink() {
+            const currentPath = window.location.pathname;
+            const sidebarLinks = document.querySelectorAll('.sidebar-link');
+            
+            console.log('Current path:', currentPath);
+            
+            // Remove active dari semua links
+            sidebarLinks.forEach(function(link) {
+                link.classList.remove('active');
+                link.classList.remove('bg-gradient-to-r', 'from-blue-100', 'to-blue-200', 'shadow-md');
+            });
+            
+            // Set active berdasarkan path
+            sidebarLinks.forEach(function(link) {
+                const href = link.getAttribute('href');
+                let isActive = false;
+                
+                console.log('Checking href:', href);
+                
+                if (currentPath.includes('/admin/index') && href && href.includes('/admin/index')) {
+                    isActive = true;
+                } else if (currentPath.includes('/departments') && href && href.includes('/departments')) {
+                    isActive = true;
+                } else if (currentPath.includes('/absensi') && href && href.includes('/absensi')) {
+                    isActive = true;
+                } else if (currentPath.includes('/company') && href && href.includes('/company')) {
+                    isActive = true;
+                } else if (currentPath.includes('/area') && href && href.includes('/area')) {
+                    isActive = true;
+                } else if (currentPath.includes('/employee') && href && href.includes('/employee')) {
+                    isActive = true;
+                } else if (href && currentPath === href) {
+                    isActive = true;
+                }
+                
+                if (isActive) {
+                    link.classList.add('active');
+                    link.classList.add('bg-gradient-to-r', 'from-blue-100', 'to-blue-200', 'shadow-md');
+                    console.log('Set active for:', href);
+                }
+            });
         }
         
-        console.log('Initializing dropdown with animations...');
-        
-        // Toggle dropdown dengan animasi
-        userBtn.addEventListener('click', function(e) {
-            e.preventDefault();
-            e.stopPropagation();
+        function initDropdown() {
+            if (dropdownInitialized) return;
             
-            const isVisible = !dropdown.classList.contains('opacity-0');
+            console.log('Attempting to initialize dropdown...');
             
-            if (!isVisible) {
-                // Show dropdown dengan animasi
-                dropdown.classList.remove('opacity-0', 'scale-95', 'translate-y-2', 'pointer-events-none');
-                dropdown.classList.add('opacity-100', 'scale-100', 'translate-y-0');
-                
-                // Animate user icon
-                if (userIcon) {
-                    userIcon.style.transform = 'rotate(180deg)';
-                }
-                
-                // Animate menu items dengan stagger effect
-                const menuItems = dropdown.querySelectorAll('.menu-item');
-                menuItems.forEach((item, index) => {
-                    item.style.opacity = '0';
-                    item.style.transform = 'translateX(-10px)';
-                    setTimeout(() => {
-                        item.style.transition = 'all 0.3s ease-out';
-                        item.style.opacity = '1';
-                        item.style.transform = 'translateX(0)';
-                    }, index * 50);
-                });
-                
-                console.log('Dropdown shown with animation');
-            } else {
-                // Hide dropdown dengan animasi
-                dropdown.classList.remove('opacity-100', 'scale-100', 'translate-y-0');
-                dropdown.classList.add('opacity-0', 'scale-95', 'translate-y-2');
-                
-                // Animate user icon back
-                if (userIcon) {
-                    userIcon.style.transform = 'rotate(0deg)';
-                }
-                
-                setTimeout(() => {
-                    dropdown.classList.add('pointer-events-none');
-                }, 300);
-                
-                console.log('Dropdown hidden with animation');
+            const userBtn = document.querySelector('.navbar-user-btn');
+            const dropdown = document.querySelector('.navbar-dropdown');
+            const userIcon = document.getElementById('user-icon');
+            
+            console.log('User button found:', !!userBtn);
+            console.log('Dropdown found:', !!dropdown);
+            console.log('User icon found:', !!userIcon);
+            
+            if (!userBtn || !dropdown) {
+                console.log('Dropdown elements not found, retrying in 500ms...');
+                setTimeout(initDropdown, 500);
+                return;
             }
-        });
-        
-        // Close dropdown when clicking outside
-        document.addEventListener('click', function(e) {
-            if (!userBtn.contains(e.target) && !dropdown.contains(e.target)) {
-                dropdown.classList.remove('opacity-100', 'scale-100', 'translate-y-0');
-                dropdown.classList.add('opacity-0', 'scale-95', 'translate-y-2');
+            
+            console.log('Initializing dropdown with animations...');
+            
+            // Toggle dropdown dengan animasi
+            userBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
                 
-                if (userIcon) {
-                    userIcon.style.transform = 'rotate(0deg)';
-                }
+                console.log('User button clicked!');
                 
-                setTimeout(() => {
-                    dropdown.classList.add('pointer-events-none');
-                }, 300);
-            }
-        });
-        
-        // Prevent dropdown from closing when clicking inside
-        dropdown.addEventListener('click', function(e) {
-            e.stopPropagation();
-        });
-        
-        dropdownInitialized = true;
-        console.log('Dropdown initialized successfully with animations');
-    }
-    
-    // Initialize when DOM is ready
-    if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', initDropdown);
-    } else {
-        initDropdown();
-    }
-    
-    // Also try to initialize after a short delay (fallback)
-    setTimeout(initDropdown, 100);
-    
-    // Sidebar functionality dengan animasi
-    document.addEventListener('DOMContentLoaded', function() {
-        console.log('DOM Content Loaded');
-        
-        // Toggle sidebar untuk mobile dengan animasi
-        const toggleBtn = document.getElementById('toggleSidebarMobile');
-        const sidebar = document.getElementById('logo-sidebar');
-        const hamburgerIcon = document.getElementById('hamburger-icon');
-        
-        if (toggleBtn && sidebar) {
-            toggleBtn.addEventListener('click', function() {
-                const isHidden = sidebar.classList.contains('-translate-x-full');
+                const isVisible = !dropdown.classList.contains('opacity-0');
+                console.log('Dropdown currently visible:', isVisible);
                 
-                if (isHidden) {
-                    // Show sidebar
-                    sidebar.classList.remove('-translate-x-full');
-                    if (hamburgerIcon) {
-                        hamburgerIcon.style.transform = 'rotate(90deg)';
+                if (!isVisible) {
+                    // Show dropdown dengan animasi
+                    dropdown.classList.remove('opacity-0', 'scale-95', 'translate-y-2', 'pointer-events-none');
+                    dropdown.classList.add('opacity-100', 'scale-100', 'translate-y-0');
+                    
+                    // Animate user icon
+                    if (userIcon) {
+                        userIcon.style.transform = 'rotate(180deg)';
                     }
                     
-                    // Animate sidebar items dengan stagger effect
-                    const sidebarItems = sidebar.querySelectorAll('.sidebar-item');
-                    sidebarItems.forEach((item, index) => {
+                    // Animate menu items dengan stagger effect
+                    const menuItems = dropdown.querySelectorAll('.menu-item');
+                    menuItems.forEach((item, index) => {
                         item.style.opacity = '0';
-                        item.style.transform = 'translateX(-20px)';
+                        item.style.transform = 'translateX(-10px)';
                         setTimeout(() => {
                             item.style.transition = 'all 0.3s ease-out';
                             item.style.opacity = '1';
                             item.style.transform = 'translateX(0)';
-                        }, index * 100);
+                        }, index * 50);
                     });
+                    
+                    console.log('Dropdown shown with animation');
                 } else {
-                    // Hide sidebar
+                    // Hide dropdown dengan animasi
+                    dropdown.classList.remove('opacity-100', 'scale-100', 'translate-y-0');
+                    dropdown.classList.add('opacity-0', 'scale-95', 'translate-y-2');
+                    
+                    // Animate user icon back
+                    if (userIcon) {
+                        userIcon.style.transform = 'rotate(0deg)';
+                    }
+                    
+                    setTimeout(() => {
+                        dropdown.classList.add('pointer-events-none');
+                    }, 300);
+                    
+                    console.log('Dropdown hidden with animation');
+                }
+            });
+            
+            // Close dropdown when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!userBtn.contains(e.target) && !dropdown.contains(e.target)) {
+                    dropdown.classList.remove('opacity-100', 'scale-100', 'translate-y-0');
+                    dropdown.classList.add('opacity-0', 'scale-95', 'translate-y-2');
+                    
+                    if (userIcon) {
+                        userIcon.style.transform = 'rotate(0deg)';
+                    }
+                    
+                    setTimeout(() => {
+                        dropdown.classList.add('pointer-events-none');
+                    }, 300);
+                }
+            });
+            
+            // Prevent dropdown from closing when clicking inside
+            dropdown.addEventListener('click', function(e) {
+                e.stopPropagation();
+            });
+            
+            dropdownInitialized = true;
+            console.log('Dropdown initialized successfully with animations');
+        }
+        
+        // Multiple initialization attempts
+        function tryInitDropdown() {
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', initDropdown);
+            } else {
+                initDropdown();
+            }
+            
+            // Fallback attempts
+            setTimeout(initDropdown, 100);
+            setTimeout(initDropdown, 500);
+            setTimeout(initDropdown, 1000);
+        }
+        
+        // Start initialization
+        tryInitDropdown();
+        
+        // Sidebar functionality dengan animasi
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('DOM Content Loaded');
+            
+            // Set active state saat halaman load
+            setActiveSidebarLink();
+            
+            // Toggle sidebar untuk mobile dengan animasi
+            const toggleBtn = document.getElementById('toggleSidebarMobile');
+            const sidebar = document.getElementById('logo-sidebar');
+            const hamburgerIcon = document.getElementById('hamburger-icon');
+            
+            if (toggleBtn && sidebar) {
+                toggleBtn.addEventListener('click', function() {
+                    const isHidden = sidebar.classList.contains('-translate-x-full');
+                    
+                    if (isHidden) {
+                        // Show sidebar
+                        sidebar.classList.remove('-translate-x-full');
+                        if (hamburgerIcon) {
+                            hamburgerIcon.style.transform = 'rotate(90deg)';
+                        }
+                        
+                        // Animate sidebar items dengan stagger effect
+                        const sidebarItems = sidebar.querySelectorAll('.sidebar-item');
+                        sidebarItems.forEach((item, index) => {
+                            item.style.opacity = '0';
+                            item.style.transform = 'translateX(-20px)';
+                            setTimeout(() => {
+                                item.style.transition = 'all 0.3s ease-out';
+                                item.style.opacity = '1';
+                                item.style.transform = 'translateX(0)';
+                            }, index * 100);
+                        });
+                    } else {
+                        // Hide sidebar
+                        sidebar.classList.add('-translate-x-full');
+                        if (hamburgerIcon) {
+                            hamburgerIcon.style.transform = 'rotate(0deg)';
+                        }
+                    }
+                });
+            }
+            
+            // Sidebar active state dengan animasi
+            const sidebarLinks = document.querySelectorAll('.sidebar-link');
+            sidebarLinks.forEach(function(link, index) {
+                link.addEventListener('click', function(e) {
+                    const href = link.getAttribute('href');
+                    
+                    // Untuk link yang valid, set active state dan biarkan navigasi
+                    if (href && href !== '#' && !href.startsWith('javascript:')) {
+                        // Set active state sebelum navigate
+                        sidebarLinks.forEach(function(l) {
+                            l.classList.remove('active');
+                            l.classList.remove('bg-gradient-to-r', 'from-blue-100', 'to-blue-200', 'shadow-md');
+                        });
+                        
+                        link.classList.add('active');
+                        link.classList.add('bg-gradient-to-r', 'from-blue-100', 'to-blue-200', 'shadow-md');
+                        
+                        console.log('Navigating to:', href);
+                        return true; // Biarkan navigasi normal
+                    }
+                    
+                    // Untuk link placeholder
+                    e.preventDefault();
+                    
+                    // Kode animasi untuk link placeholder
+                    sidebarLinks.forEach(function(l) {
+                        l.classList.remove('active');
+                        l.style.transform = 'scale(1)';
+                        l.classList.remove('bg-gradient-to-r', 'from-blue-100', 'to-blue-200', 'shadow-md');
+                    });
+                    
+                    link.classList.add('active');
+                    link.style.transform = 'scale(1.02)';
+                    
+                    setTimeout(() => {
+                        link.classList.add('bg-gradient-to-r', 'from-blue-100', 'to-blue-200', 'shadow-md');
+                        link.style.transform = 'scale(1)';
+                    }, 150);
+                    
+                    link.style.animation = 'pulse 0.5s ease-in-out';
+                    setTimeout(() => {
+                        link.style.animation = '';
+                    }, 500);
+                });
+                
+                // Add entrance animation
+                setTimeout(() => {
+                    link.parentElement.style.opacity = '1';
+                    link.parentElement.style.transform = 'translateX(0)';
+                }, index * 100);
+            });
+            
+            // Window resize handler
+            window.addEventListener('resize', function() {
+                if (window.innerWidth >= 1024 && sidebar) {
+                    sidebar.classList.remove('-translate-x-full');
+                    if (hamburgerIcon) {
+                        hamburgerIcon.style.transform = 'rotate(0deg)';
+                    }
+                } else if (window.innerWidth < 1024 && sidebar) {
                     sidebar.classList.add('-translate-x-full');
                     if (hamburgerIcon) {
                         hamburgerIcon.style.transform = 'rotate(0deg)';
                     }
                 }
             });
-        }
+        });
         
-        // Sidebar active state dengan animasi
-        const sidebarLinks = document.querySelectorAll('.sidebar-link');
-        sidebarLinks.forEach(function(link, index) {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                // Remove active class dari semua links dengan animasi
-                sidebarLinks.forEach(function(l) {
-                    l.classList.remove('active');
-                    l.style.transform = 'scale(1)';
-                    // Remove gradient background classes
-                    l.classList.remove('bg-gradient-to-r', 'from-blue-100', 'to-blue-200', 'shadow-md');
-                });
-                
-                // Add active class ke link yang diklik dengan animasi
-                link.classList.add('active');
-                link.style.transform = 'scale(1.02)';
-                
-                // Add gradient background dengan delay
-                setTimeout(() => {
-                    link.classList.add('bg-gradient-to-r', 'from-blue-100', 'to-blue-200', 'shadow-md');
-                    link.style.transform = 'scale(1)';
-                }, 150);
-                
-                // Pulse effect
-                link.style.animation = 'pulse 0.5s ease-in-out';
-                setTimeout(() => {
-                    link.style.animation = '';
-                }, 500);
-            });
+        // Add CSS animations
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes pulse {
+                0% { transform: scale(1); }
+                50% { transform: scale(1.05); }
+                100% { transform: scale(1); }
+            }
             
-            // Add entrance animation untuk sidebar items
-            setTimeout(() => {
-                link.parentElement.style.opacity = '1';
-                link.parentElement.style.transform = 'translateX(0)';
-            }, index * 100);
-        });
-        
-        // Set default active state untuk Home dengan animasi
-        const homeLink = document.querySelector('.sidebar-link.active');
-        if (homeLink) {
-            setTimeout(() => {
-                homeLink.classList.add('bg-gradient-to-r', 'from-blue-100', 'to-blue-200', 'shadow-md');
-            }, 500);
-        }
-        
-        // Window resize handler
-        window.addEventListener('resize', function() {
-            if (window.innerWidth >= 1024 && sidebar) {
-                sidebar.classList.remove('-translate-x-full');
-                if (hamburgerIcon) {
-                    hamburgerIcon.style.transform = 'rotate(0deg)';
+            @keyframes slideIn {
+                from { 
+                    opacity: 0; 
+                    transform: translateX(-20px); 
                 }
-            } else if (window.innerWidth < 1024 && sidebar) {
-                sidebar.classList.add('-translate-x-full');
-                if (hamburgerIcon) {
-                    hamburgerIcon.style.transform = 'rotate(0deg)';
+                to { 
+                    opacity: 1; 
+                    transform: translateX(0); 
                 }
             }
-        });
-    });
-    
-    // Add CSS animations
-    const style = document.createElement('style');
-    style.textContent = `
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
-        }
-        
-        @keyframes slideIn {
-            from { 
-                opacity: 0; 
-                transform: translateX(-20px); 
+            
+            @keyframes fadeInDown {
+                from {
+                    opacity: 0;
+                    transform: translate3d(0, -20px, 0);
+                }
+                to {
+                    opacity: 1;
+                    transform: translate3d(0, 0, 0);
+                }
             }
-            to { 
-                opacity: 1; 
-                transform: translateX(0); 
-            }
-        }
-        
-        @keyframes fadeInDown {
-            from {
+            
+            .sidebar-item {
                 opacity: 0;
-                transform: translate3d(0, -20px, 0);
+                transform: translateX(-20px);
+                transition: all 0.3s ease-out;
             }
-            to {
-                opacity: 1;
-                transform: translate3d(0, 0, 0);
+            
+            .menu-item:hover svg {
+                transform: scale(1.1);
             }
-        }
-        
-        .sidebar-item {
-            opacity: 0;
-            transform: translateX(-20px);
-            transition: all 0.3s ease-out;
-        }
-        
-        .menu-item:hover svg {
-            transform: scale(1.1);
-        }
-        
-        .navbar-dropdown.show {
-            animation: fadeInDown 0.3s ease-out;
-        }
-    `;
-    document.head.appendChild(style);
-})();
-</script>
+            
+            .navbar-dropdown.show {
+                animation: fadeInDown 0.3s ease-out;
+            }
+        `;
+        document.head.appendChild(style);
+    })();
+    </script>
